@@ -34,7 +34,7 @@ class Lighting {
     this.el.setAttribute("class", `${this.className} light`);
     setTimeout(() => {
       this.el.setAttribute("class", this.className);
-    }, this.inteval * 5);
+    }, this.inteval * 6);
   };
 }
 
