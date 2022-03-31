@@ -1,0 +1,71 @@
+* {
+  font-family: 'Red Hat Mono', monospace;
+}
+
+body {
+  margin:0;
+  padding:0;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+}
+
+#logo {
+  margin-top: 60px;
+  font-size: 16px;
+  color: white;
+}
+
+#content {
+  padding: 50px 40px;
+  letter-spacing: 3px;
+  color: gainsboro;
+  transform: skewY(10deg);
+  display: flex;
+  flex: 1;
+  max-width: 480px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#content > .text {
+  font-family: 'codystar', sans-serif;
+  font-size: 2.5em;
+  line-height: 1.75em;
+  opacity: .25;
+  margin-right: 1px;
+}
+
+#content > .blank {
+  width: 20px;
+  line-height: 1.75em;
+}
+
+#footer {
+  margin-bottom: 60px;
+  font-size: 16px;
+  color: #666;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#footer:hover {
+  margin-bottom: 60px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.light {
+  animation: lightup 0.4s ease;
+}
+
+@keyframes lightup {
+  0% { opacity: 0.25; }
+  50% { opacity: 1; }
+  100% { opacity: 0.25; }
+}
