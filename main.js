@@ -20,7 +20,7 @@ class Lighting {
     this.el = el;
     this.index = index;
     this.length = length;
-    this.inteval = 100;
+    this.inteval = 70;
     this.className = el.className;
     setTimeout(this.start, index * this.inteval);
   }
@@ -34,7 +34,7 @@ class Lighting {
     this.el.setAttribute("class", `${this.className} light`);
     setTimeout(() => {
       this.el.setAttribute("class", this.className);
-    }, this.inteval * 6);
+    }, this.inteval * 8);
   };
 }
 
